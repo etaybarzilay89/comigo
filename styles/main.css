@@ -4,13 +4,28 @@
   }
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+body > header {
+  width: 100%;
+  height: 60px;
 }
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   outline: 0;
 }
 
@@ -18,11 +33,33 @@ main a {
   background-color: rgb(241, 72, 72);
 }
 
-ul {
+.list-reset {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.main-menu a {
+.round-btn {
+  letter-spacing: 0.2rem;
+  border-radius: 1.7rem;
+  font-size: .64rem;
+  font-weight: 400;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+}
+
+.round-btn.inverse{
+  background-color: rgb(255, 255, 255);
+  color: rgb(241, 72, 72);
+}
+
+.main-menu {
+  padding-right: 0;
+  /*line-height: 60px;*/
+  /*vertical-align: middle;*/
+}
+
+.main-menu a{
   color: rgb(61, 61, 61);
 }
 
@@ -39,19 +76,65 @@ ul {
   color: rgb(255, 255, 255);
 }
 
+.mm-first > li {
+  display: inline-block;
+}
+.mm-second > li > a {
+  width: 33.333%;
+  height: 100px;
+  border: 1px dotted black;
+  display: none;
+  text-align: center;
+}
+
+/*li:hover > ul > li > a {*/
+  /*display: inline-block*/
+/*}*/
+
+.mm-third > li > a {
+  width: 50%;
+  height: 100px;
+  border: 1px dotted black;
+  display: none;
+  text-align: center;
+}
+
 .schedule-a-demo {
   width: 100%;
-  height: 400px;
+  height: 42.5vw;
   background-image: url(../assets/main-bg/home-brain-image-new-1920x816.png), url(../assets/main-bg/home-featured-bg.png);
   background-repeat: no-repeat, no-repeat;
   background-size: contain, auto auto;
+  background-position: center, 0 0;
   text-align: center;
   color: white;
 }
 
+.schedule-a-demo-text {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10% 0;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
 .why-comigo {
   width: 100%;
-  height: 300px;
+  height: 33.333vw;
+  text-align: center;
+}
+
+.why-comigo-text{
+  margin: 0 auto;
+  width: 37%;
+  padding: 5% 0;
+}
+
+.why-comigo-text h4 {
+  color: rgb(61,61,61);
+  font-weight: 100;
 }
 
 .engagement {
@@ -60,48 +143,78 @@ ul {
   display: none;
 }
 
-.tv-service a {
-  width: 100%;
-  height: 400px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(241, 72, 72);
+.tv-service {
+  width: 50vw;
+  height: 50vw;
+  text-align: center;
+  background-image: url(../assets/other/ic-ei-cloud-brain-hp.png), url(../assets/other/home-tv-service-bg1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, center;
+  color: white;
 }
 
+.tv-service-text {
+  margin: 0 auto;
+  width: 50%;
+  padding: 200px 0;
+}
+
+
 .android {
+  width: 50vw;
+  height: 50vw;
+  background-image: url(../assets/other/ic-stb-screens.png), url(../assets/other/home-tv-service-bg2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, auto;
+}
+
+.android-text {
+  margin: 0 0;
+  width: 50%;
+  padding: 250px 0;
+}
+
+.schedules > a {
+  background-color: white;
+}
+.experience {
   width: 100%;
-  height: 400px;
+  height: 600px;
 }
 .blog {
   width: 100%;
-  height: 400px;
+  height: 36vw;
+  text-align: center;
+  display: block;
 }
 
 .blog-text {
   width: 16.666%;
   height: 100%;
   background-color: rgb(241, 72, 72);
-  float:left;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .blog ul {
   width: 83.333%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  float:left;
+  /*padding: 0;*/
+  display: inline-block;
 }
 
 .blog li {
   width: 20%;
   height: 100%;
-  float:left;
+  /*float:left;*/
+  vertical-align: top;
+  display: inline-block;
   background-position: top center;
 }
 
 .blog a {
   width: 100%;
   height: 100%;
-  display: block;
 }
 
 .blog li:nth-of-type(1) {
@@ -129,10 +242,15 @@ ul {
 }
 
 .lower-footer {
+  height: 100px;
   background-color: rgb(21, 21, 21);
   color: rgb(99, 99, 99);
+  font-size: 0.58rem;
 }
 
+.lower-footer :nth-child(n + 1) {
+  display: inline-block;
+}
 .lower-footer a {
   color: rgb(99, 99, 99);
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Comigo</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -13,18 +14,18 @@
         <img src="assets/logo/comigo-logo-black.png" alt="comigo black logo" width="140" height="26">
       </a>
       <nav class="main-menu">
-        <ul class="mm-first">
+        <ul class="mm-first list-reset">
           <li><a href="#">Home</a></li>
           <li><a href="#">Our Solutions</a>
-            <ul>
+            <ul class="mm-second list-reset">
               <li><a href="#">EI CLOUD</a>
-                <ul>
+                <ul class="mm-third list-reset">
                   <li><a href="#">EIˣ</a></li>
                   <li><a href="#">EI MIND</a></li>
                 </ul>
               </li>
               <li><a href="#">EI MIDDLEWARE</a>
-                <ul>
+                <ul class="mm-third list-reset">
                   <li><a href="#">ANDROID</a></li>
                   <li><a href="#">COMIGO WATCHAPP&#8482; APPLICATION</a></li>
                 </ul>
@@ -34,7 +35,7 @@
           </li>
           <li><a href="#">Partners</a></li>
           <li><a href="#">Industry Insights</a>
-            <ul>
+            <ul class="mm-second list-reset">
               <li><a href="#">MEDIA ROOMS</a></li>
               <li><a href="#">BLOG</a></li>
               <li><a href="#">INDUSTRY EVENTS</a></li>
@@ -47,16 +48,25 @@
     </header>
     <main>
       <section class="schedule-a-demo">
-        <h1>Make your OTT shine with the Experience Intelligence Cloud</h1>
-        <a href="#">SCHEDULE A DEMO</a>
+        <div class="schedule-a-demo-text">
+          <h1>
+            Make your OTT shine with the Experience Intelligence Cloud
+          </h1>
+          <a href="#" class="round-btn">SCHEDULE A DEMO</a>
+        </div>
       </section>
-      <article class="why-comigo"><h2>WHY COMIGO?</h2>
-        <h4>Creating a TV that understands, with automatic metadata enrichment and Artificial sIntelligence (AI)</h4>
-        <a href="#">LEARN MORE</a>
+      <article class="why-comigo">
+        <div class="why-comigo-text">
+          <h2>WHY COMIGO?</h2>
+          <h4>
+            Creating a TV that understands, with automatic metadata enrichment and Artificial sIntelligence (AI)
+          </h4>
+          <a href="#" class="round-btn">LEARN MORE</a>
+        </div>
       </article>
       <section class="engagement">
         <h3>ENGAGE VIEWERS, DIFFERENTIATE EXPERIENCE AND DRIVE NEW REVENUE with highly-relevant contextual</h3>
-        <ul>
+        <ul class="list-reset">
           <li>
             <h4>PEDIA</h4>
             <figure>
@@ -108,22 +118,24 @@
         </ul>
       </section>
       <section class="tv-service">
-        <!--<img src="assets/other/ic-ei-cloud-brain-hp.png" alt="brain.jpg" width="250" height="198">-->
-        <h3>ENHANCE ANY TV SERVICE</h3>
-        <p>Comigo Experience Intelligence (EI)</p>
-        <a href="#">ENHANCE YOUR OTT TV</a>
+        <div class="tv-service-text">
+          <h3>ENHANCE ANY TV SERVICE</h3>
+          <p>Comigo Experience Intelligence (EI)</p>
+          <a href="#" class="round-btn inverse">ENHANCE YOUR OTT TV</a>
+        </div>
       </section>
-      <section class="android">
-        <img src="assets/other/ic-stb-screens.png" alt="screens picture" width="418" height="419">
-        <h3>DEPLOY BEST IN CLASS TV SERVICE</h3>
-        <p><em>Comigo's</em> Android-based STB (HW&MW)</p>
-        <a href="#">DEPLOY ON ANDROID</a>
+      <section class="android rounded-link">
+        <div class="android-text">
+          <h3>DEPLOY BEST IN CLASS TV SERVICE</h3>
+          <p><em>Comigo's</em> Android-based STB (HW&MW)</p>
+          <a href="#" class="round-btn">DEPLOY ON ANDROID</a>
+        </div>
       </section>
       <section class="experience">
-        <img src="assets/other/screen_whos_on.jpg" alt="who/'s on">
+        <img src="assets/other/screen_whos_on.jpg" alt="who/'s on" width="500" height="354">
         <h3>YOUR CONTENT, COMIGO'S UNIQUE EXPERIENCE</h3>
         <p>Intelligence-based contextual WatchApp&#8482; Applications.</p>
-        <a href="#">LEARN MORE</a>
+        <a href="#" class="round-btn">LEARN MORE</a>
       </section>
       <footer class="schedules">
         <h3>LEARN MORE ABOUT COMIGO</h3>
@@ -134,7 +146,7 @@
         <a href="#">
           <img src="assets/other/comigo-schedule-meeting.png" alt="schedule a meeting picture" width="574" height="293">
         </a>
-        <ul class="social-networks">
+        <ul class="social-networks list-reset">
           <li><a href="#">FACEBOOK</a></li>
           <li><a href="#">TWITTER</a></li>
           <li><a href="#">LINKED IN</a></li>
@@ -150,34 +162,34 @@
       <div class="blog-text">
         <h3>OUR BLOG</h3>
         <span>THE INSIDE VIEW</span>
-      </div>
-      <ul>
-        <li>
+      </div><!--
+      --><ul class="list-reset">
+           <li>
           <a href="#">
             <p><em>Comigo's</em> Experience Intelligence Products Redefine TV - And you can Find out how at
               <abbr title="International Broadcasting Convention 2016">IBC2016</abbr></p>
             <span>Read More</span>
           </a>
-        </li>
-        <li>
+        </li><!--
+        --><li>
           <a href="#">
             <p>What We Learned at <em>TV Connect 2016</em></p>
             <span>Read More</span>
           </a>
-        </li>
-        <li>
+        </li><!--
+        --><li>
           <a href="#">
             <p>Big Data Meets TV - The Next Phase In the TV Experience Evolution</p>
             <span>Read More</span>
           </a>
-        </li>
-        <li>
+        </li><!--
+        --><li>
           <a href="#">
             <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at <em>TV Connect 2016</em></p>
             <span>Read More</span>
           </a>
-        </li>
-        <li>
+        </li><!--
+        --><li>
           <a href="#">
             <p>Quality, Set-Top-Boxes, Crappy Cars and Caveat Emptor</p>
             <span>Read More</span>
@@ -190,10 +202,10 @@
         <img src="assets/logo/comigo-logo-white.png" alt="Comigo Logo White" width="138" height="24">
       </a>
       <nav class="main-menu-minimize">
-        <ul class="mmm-first">
+        <ul class="mmm-first list-reset">
           <li><a href="#">Home</a></li>
           <li><a href="#">Our Solutions</a>
-            <ul class="mmm-second">
+            <ul class="mmm-second list-reset">
               <li><a href="#">EI CLOUD</a></li>
               <li><a href="#">EI MIDDLEWARE</a></li>
               <li><a href="#">ANDROID STB</a></li>
@@ -201,7 +213,7 @@
           </li>
           <li><a href="#">Partners</a></li>
           <li><a href="#">Industry Insights</a>
-            <ul class="mmm-second">
+            <ul class="mmm-second list-reset">
               <li><a href="#">MEDIA ROOMS</a></li>
               <li><a href="#">BLOG</a></li>
               <li><a href="#">INDUSTRY EVENTS</a></li>
@@ -217,7 +229,7 @@
         <a href="#">Contact Us</a>
         <a href="#">Privacy Policy</a>
         <address class="author"><p>Developed By: <a href="#">FATLADY</a></p></address>
-        <ul class="social-networks">
+        <ul class="social-networks list-reset">
           <li><a href="#">FACEBOOK</a></li>
           <li><a href="#">TWITTER</a></li>
           <li><a href="#">LINKED IN</a></li>
