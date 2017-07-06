@@ -55,8 +55,6 @@ main a {
 
 .main-menu {
   padding-right: 0;
-  /*line-height: 60px;*/
-  /*vertical-align: middle;*/
 }
 
 .main-menu a{
@@ -69,9 +67,8 @@ main a {
 }
 
 .main-menu ul ul a:hover,
-.main-menu ul ul a:focus,
-.blog span,
-.blog h3 {
+.main-menu ul ul a:focus
+{
   background-color: rgb(241, 72, 72);
   color: rgb(255, 255, 255);
 }
@@ -113,11 +110,23 @@ main a {
 .schedule-a-demo-text {
   margin: 0 auto;
   width: 50%;
-  padding: 10% 0;
+  padding-top: 10%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4{
   font-weight: 300;
+}
+
+h1 {
+  font-size: 3.15rem;
+}
+
+h2 {
+  font-size: 2.275rem;
+}
+
+h4 {
+  font-size: 0.88rem;
 }
 
 .why-comigo {
@@ -151,6 +160,8 @@ h1, h2, h3 {
   background-repeat: no-repeat, no-repeat;
   background-position: top, center;
   color: white;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .tv-service-text {
@@ -159,19 +170,20 @@ h1, h2, h3 {
   padding: 200px 0;
 }
 
-
 .android {
   width: 50vw;
   height: 50vw;
   background-image: url(../assets/other/ic-stb-screens.png), url(../assets/other/home-tv-service-bg2.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 50%, auto;
+  background-position-x: 14%;
+  display: inline-block;
 }
 
 .android-text {
   margin: 0 0;
   width: 50%;
-  padding: 250px 0;
+  padding: 50% 0 0  10%;
 }
 
 .schedules > a {
@@ -183,9 +195,10 @@ h1, h2, h3 {
 }
 .blog {
   width: 100%;
-  height: 36vw;
+  height: 36.1111111111vw;
   text-align: center;
   display: block;
+  color:white;
 }
 
 .blog-text {
@@ -194,29 +207,51 @@ h1, h2, h3 {
   background-color: rgb(241, 72, 72);
   display: inline-block;
   vertical-align: top;
+  position: relative;
+}
+
+.blog-text-wrapper{
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
 }
 
 .blog ul {
   width: 83.333%;
   height: 100%;
-  /*padding: 0;*/
   display: inline-block;
 }
 
 .blog li {
   width: 20%;
   height: 100%;
-  /*float:left;*/
   vertical-align: top;
   display: inline-block;
-  background-position: top center;
+  background: no-repeat top center;
+  background-size: cover;
 }
 
 .blog a {
   width: 100%;
   height: 100%;
+  display: block;
+  position: relative;
+  overflow: auto;
 }
 
+.blog li span {
+  display: block;
+  width: 100%;
+  height: 15%;
+  background-color: rgb(241, 72, 72);
+  position: absolute;
+  top: 100%;
+}
+
+.blog li p {
+  position: absolute;
+  bottom: 0;
+}
 .blog li:nth-of-type(1) {
   background-image: url(../assets/blog/ibc_post_EI-750x508.png);
 }
@@ -242,15 +277,15 @@ h1, h2, h3 {
 }
 
 .lower-footer {
-  height: 100px;
   background-color: rgb(21, 21, 21);
   color: rgb(99, 99, 99);
   font-size: 0.58rem;
 }
 
-.lower-footer :nth-child(n + 1) {
+.lower-footer :nth-child(n) {
   display: inline-block;
 }
+
 .lower-footer a {
   color: rgb(99, 99, 99);
 }
