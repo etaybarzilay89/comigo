@@ -14,19 +14,22 @@
       <a href="#">
         <img src="assets/logo/comigo-logo-black.png" alt="comigo black logo" width="140" height="26">
       </a>
+      <input id="icon-menu-checkbox-id" type="checkbox" class="icon-menu-checkbox">
+      <label class="icon-cross" for="icon-menu-checkbox-id"></label>
+      <label class="icon-menu" for="icon-menu-checkbox-id"></label>
       <nav class="main-menu">
-        <ul class="mm-first list-reset">
-          <li><a href="#">Home</a></li>
+        <ul class="mm-first">
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Our Solutions</a>
-            <ul class="mm-second list-reset">
+            <ul class="mm-second">
               <li><a href="#">EI CLOUD</a>
-                <ul class="mm-third list-reset">
+                <ul class="mm-third">
                   <li><a href="#">EIˣ</a></li
                   ><li><a href="#">EI MIND</a></li>
                 </ul>
               </li
               ><li><a href="#">EI MIDDLEWARE</a>
-                <ul class="mm-third list-reset">
+                <ul class="mm-third">
                   <li><a href="#">ANDROID</a></li
                   ><li><a href="#">COMIGO WATCHAPP&#8482; APPLICATION</a></li>
                 </ul>
@@ -36,7 +39,7 @@
           </li>
           <li><a href="#">Partners</a></li>
           <li><a href="#">Industry Insights</a>
-            <ul class="mm-second list-reset">
+            <ul class="mm-second">
               <li><a href="#">MEDIA ROOMS</a></li
               ><li><a href="#">BLOG</a></li
               ><li><a href="#">INDUSTRY EVENTS</a></li>
@@ -135,31 +138,35 @@
         </div>
       </section>
       <section class="experience">
-        <img src="assets/other/screen_whos_on.jpg" alt="who/'s on" width="500" height="354">
         <div class="experience-text">
           <h3>YOUR CONTENT, COMIGO'S UNIQUE EXPERIENCE</h3>
           <p>Intelligence-based contextual WatchApp&#8482; Applications.</p>
           <a href="#" class="round-btn">LEARN MORE</a>
         </div>
+        <img src="assets/other/screen_whos_on.jpg" alt="who/'s on" width="700" height="495">
       </section>
       <footer class="schedules">
-        <h3>LEARN MORE ABOUT COMIGO</h3>
-        <a href="#">
-          <img src="assets/other/lnr-download.svg" alt="download">
-          <p>Download our brochure learn more</p>
-        </a>
-        <a href="#">
-          <img src="assets/other/comigo-schedule-meeting.png" alt="schedule a meeting picture" width="574" height="293">
-        </a>
-        <ul class="social-networks list-reset">
-          <li><a href="#"><span class="icon-facebook"></span></a></li>
-          <li><a href="#"><span class="icon-twitter"></span></a></li>
-          <li><a href="#"><span class="icon-linkedin2"></span></a></li>
-          <li><a href="#"><span class="icon-youtube"></span></a></li>
-        </ul>
-        <a href="#">
+        <div class="learn-more-comigo">
+          <h3>LEARN MORE ABOUT COMIGO</h3>
+          <a href="#" class="download-information">
+            <div class="img-wrapper">
+              <img src="assets/other/lnr-download.svg" alt="download">
+            </div>
+            <p>Download our brochure learn more</p>
+          </a>
+          <ul class="list-reset social-networks">
+            <li><a href="#" class="social-icon"><span class="icon-facebook"></span></a></li>
+            <li><a href="#" class="social-icon"><span class="icon-twitter"></span></a></li>
+            <li><a href="#" class="social-icon"><span class="icon-linkedin2"></span></a></li>
+            <li><a href="#" class="social-icon"><span class="icon-youtube"></span></a></li>
+          </ul>
+          <a href="#" class="schedule-meeting-link">
+            <img src="assets/other/comigo-schedule-meeting.png" alt="schedule a meeting picture" width="574" height="293">
+          </a>
+        </div>
+        <a href="#" class="schedule-a-demo-pic">
           <h3>SCHEDULE A DEMO</h3>
-          <img src="assets/other/screen_demo.jpg" alt="schedule a demo">
+          <img src="assets/other/screen_demo.jpg" alt="schedule a demo" width="500" height="375">
         </a>
       </footer>
     </main>
@@ -204,31 +211,33 @@
       </ul>
     </aside>
     <footer class="sub-menus">
-      <a href="#">
-        <img src="assets/logo/comigo-logo-white.png" alt="Comigo Logo White" width="138" height="24">
-      </a>
-      <nav class="main-menu-minimize">
-        <ul class="mmm-first list-reset">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Solutions</a>
-            <ul class="mmm-second list-reset">
-              <li><a href="#">EI CLOUD</a></li>
-              <li><a href="#">EI MIDDLEWARE</a></li>
-              <li><a href="#">ANDROID STB</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Industry Insights</a>
-            <ul class="mmm-second list-reset">
-              <li><a href="#">MEDIA ROOMS</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">INDUSTRY EVENTS</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
+      <div class="upper-footer">
+        <nav class="main-menu-minimize">
+          <ul class="mmm-first list-reset">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Solutions</a>
+              <ul class="mmm-second list-reset">
+                <li><a href="#">EI CLOUD</a></li>
+                <li><a href="#">EI MIDDLEWARE</a></li>
+                <li><a href="#">ANDROID STB</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Industry Insights</a>
+              <ul class="mmm-second list-reset">
+                <li><a href="#">MEDIA ROOMS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">INDUSTRY EVENTS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <a href="#">
+          <img src="assets/logo/comigo-logo-white.png" alt="Comigo Logo White" width="138" height="24">
+        </a>
+      </div>
       <div class="lower-footer">
         <small>All Rights Reserved Comigo &#169; 2016</small>
         <a href="#">Terms of Use</a>
